@@ -2,5 +2,5 @@ name: JoshuaRule Portfolio
 markdown: redcarpet
 pygments: true
 url: "http://joshuarule.github.io/"
-baseurl: "/"
+baseurl: ""
 permalink: none
