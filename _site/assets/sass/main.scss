@@ -1,0 +1,285 @@
+@import 'compass';
+@import 'breakpoint';
+@import 'config';
+@import 'grid';
+
+* {
+  @include box-sizing(border-box);
+}
+
+html{
+  font-size: 62.5%;
+}
+
+.container {
+  position: relative;
+  outline: 1px solid red;
+  margin: 0 auto;
+  overflow: hidden; 
+  padding: 0 28px;
+  @include box-sizing(content-box);
+  
+  @include breakpoint($break) {
+    max-width: 64.6rem;
+  }
+
+  @include breakpoint($break1) {
+    max-width: 98rem;
+  }
+}
+
+body{
+  font-size: 1.6rem;
+  margin:  0;
+  padding: 0;
+  position: relative;
+  width:  100%;
+  height: 100%;
+  background: $bg-color;
+  font-family: "Adelle", "adelle-sans", "Adelle Sans", Helvetica Neue, helvetica, arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+header { // logo container
+  height: 19.6rem;
+  @include breakpoint($break) {
+    height: 30.8rem;
+  }
+}
+
+svg{ // logo
+  font-size: 1.25rem;
+  position: absolute;
+  top: 7.2rem;
+  width:  8em;
+  height: 8em;
+  left: 50%;
+  margin-left: -4em;
+  margin-top: -1.9em;
+  -webkit-filter: blur(40px);
+  -webkit-transform: scale(2.25);   
+  -webkit-transition: all .25s ease-in-out;
+  fill: #f5f5f5;
+
+  @include breakpoint($break) {
+    top: 14.0rem;
+  }
+
+  .ready & {
+    -webkit-filter: none;
+  -webkit-transform: scale(1) translateZ(1px);
+  fill: #333333;
+  }
+}
+
+h1{display: none;}
+
+h2{
+  font-size: 2.8rem;
+  width: 100%;
+  height: 5em;
+  position: relative;
+  margin: 0 0 0 0;
+  text-align: center;
+  line-height: 1.5em;
+  padding: 0;
+  -webkit-transform: translateZ(1px);
+
+  span{
+    display: inline-block;
+    color: #f5f5f5;
+    color: #252525;
+    text-align: center;
+    font-weight: 200;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    padding: .25em .75em;
+    letter-spacing: .2rem;
+    border: .1rem solid rgba(0,0,0,.75);
+    border-left:  none;
+    border-right: none;
+
+    @include breakpoint($break) {
+      width: 30.8rem;
+    }
+    
+  }
+}
+
+
+
+section + section{
+  margin-top: 8.4rem;
+}
+
+section:last-child{
+  padding-bottom: 30.8rem;
+}
+
+/* For Mobile */
+
+a{
+  display: block;
+  background: rgba(0,0,0,.5);
+  width: 100%;
+  position: relative;
+  -webkit-transform: translateZ(1px);
+
+  &:hover {
+    img {-webkit-filter: none;}
+    strong{ opacity: .01; -webkit-transform: scaleY(0) scaleX(0);}
+    &:before{ border: .1rem solid rgba(0,0,0,.5);}
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    left:   -.7rem;
+    top:    -.7rem;
+    bottom: -.7rem;
+    right:  -.7rem;
+    border: .1rem solid rgba(0,0,0,.25);
+    border-radius: inherit;
+    z-index: 1;
+  }
+
+  strong { // project title
+    display: none;
+
+    @include breakpoint($break) {
+      display: block;
+      font-size: 1.4rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 30.8rem;
+      padding: 2em .25em;
+      min-height: 5em;
+      line-height: 1em;
+      margin: -2.5em 0 0 -15.4rem;
+      text-align: center;
+      background: #252525;
+      letter-spacing: .1rem;
+      color: #f5f5f5;
+      z-index: 1;
+      font-weight: 400;
+      text-transform: uppercase;
+    /*     border-radius: .2rem; */
+      opacity: .99;
+      -webkit-transition: all .25s ease;
+      z-index: 3;
+      -webkit-transform: scaleY(1) scaleX(1);
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      left:   -.35rem;
+      top:    -.35rem;
+      bottom: -.35rem;
+      right:  -.35rem;
+      border: .1rem solid #252525;
+      border-radius: inherit;
+    }
+  }
+}
+
+a + a{ margin-top: 5.6rem;}
+
+img{ // project img
+  content: "";
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 42.857142%;
+  background-size: cover;
+
+  background-position: center top;
+  background-repeat: no-repeat;
+  border-radius: inherit;
+  z-index: 2;
+
+  @include breakpoint($break) {
+    -webkit-filter: grayscale(.5) opacity(.15);
+    -webkit-transition: all .25s ease;
+  }
+}
+
+
+/* Groupon */
+
+.groupon-1 img{ background-image: url(http://f.cl.ly/items/1332171L1S3A3i012R0r/Photoshop-2014-01-14-at-3.08.48-AM.png); }
+.groupon-2 img{ background-image: url(http://f.cl.ly/items/3o0N460b402l353U2v2n/Photoshop-2014-01-14-at-3.13.18-AM.png); }
+.groupon-3 img{ background-image: url(http://f.cl.ly/items/3p0A1o211P1n3R1Y373o/Photoshop-2014-01-14-at-3.21.34-AM.png); }
+.groupon-4 img{ background-image: url(http://f.cl.ly/items/413c2t2g0O2A3N2Z3n1F/Photoshop-2014-01-14-at-3.30.35-AM.png); }
+.groupon-5 img{ background-image: url(http://f.cl.ly/items/0W0J1x2z1e1c0A0j0p1z/Photoshop-2014-01-14-at-3.42.05-AM.png); }
+.groupon-6 img{ background-image: url(http://f.cl.ly/items/3B2o3V2K1s1L3m0c0y09/Photoshop-2014-01-14-at-3.54.19-AM.png); }
+.groupon-7 img{ background-image: url(http://f.cl.ly/items/0N1B1t2x3a2C1b1F1X2z/Image%202014-01-14%20at%203.55.36%20AM.png); }
+
+.koemei img{ background-image: url(http://cl.ly/TMC2/Photoshop-2014-01-14-at-3.59.01-AM.png); }
+
+/* APPS */
+
+.speedo img{ background-image: url(http://f.cl.ly/items/130D192o000y1T2q0t0F/Photoshop-2014-01-14-at-3.52.08-AM.png); }
+
+.radius img{ background-image: url(http://cl.ly/TLpA/Photoshop-2014-01-14-at-4.10.25-AM.png); }
+.bobsled img{ background-image: url(http://cl.ly/TMGx/Photoshop-2014-01-14-at-4.19.11-AM.png); }
+
+/* Design */
+
+.zenprise img{ background-image: url(http://cl.ly/TMiA/Photoshop-2014-01-14-at-4.34.48-AM.png); }
+.polycom img{ background-image: url(http://f.cl.ly/items/2A3J0t132l210q0e3v1y/Photoshop-2014-01-14-at-4.47.59-AM.png); }
+.redhot img{ background-image: url(http://cl.ly/TMQ0/Photoshop-2014-01-14-at-4.54.31-AM.png); }
+
+/* Ideas & Wires */
+
+.paperbutton-1 img{
+  background-image: url(http://f.cl.ly/items/0g2k2J1f0H3o103v0C3X/Photoshop-2014-01-14-at-3.06.07-AM.png);
+}
+.paperbutton-2 img{
+  background-image: url(http://cl.ly/TMUo/Photoshop-2014-01-14-at-5.06.59-AM.png);
+}
+.paperbutton-3 img{
+  background-image: url(http://cl.ly/TMNY/Photoshop-2014-01-14-at-5.12.27-AM.png);
+}
+
+.plix img{ background-image: url(http://cl.ly/TMBa/Photoshop-2014-01-14-at-5.16.39-AM.png); }
+
+/* Expirements & Code */
+
+.invite img{
+  background-image: url(http://cl.ly/TMDe/Photoshop-2014-01-14-at-5.22.46-AM.png);
+}
+
+.status img{
+  background-image: url(http://cl.ly/TMV7/Photoshop-2014-01-14-at-5.34.30-AM.png);
+}
+.underoath img{
+  background-image: url(http://cl.ly/TMmM/Photoshop-2014-01-14-at-5.39.16-AM.png);
+}
+.inset img{
+  background-image: url(http://cl.ly/TLmi/Photoshop-2014-01-14-at-5.43.19-AM.png);
+}
+.progress img{
+  background-image: url(http://cl.ly/TLn5/Photoshop-2014-01-14-at-5.55.03-AM.png);
+}
+.dashed img{
+  background-image: url(http://cl.ly/TMAf/Photoshop-2014-01-14-at-5.53.29-AM.png);
+}
+.fullwidth img{
+  background-image: url(http://cl.ly/TLfN/Photoshop-2014-01-14-at-6.01.02-AM.png);
+}
+
+.montage img{
+  background-image: url(http://cl.ly/TMbr/Photoshop-2014-01-14-at-6.08.26-AM.png);
+}
+.hylyt img{
+  background-image: url(http://cl.ly/TLgm/Photoshop-2014-01-14-at-6.10.17-AM.png);
+}
+.watashiwa img{
+  background-image: url(http://cl.ly/TMdK/Photoshop-2014-01-14-at-6.14.47-AM.png);
+}
+
+.anberlin img{ background-image: url(http://cl.ly/TMaj/Photoshop-2014-01-14-at-6.16.58-AM.png); }
+
+

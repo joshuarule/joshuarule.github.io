@@ -1,0 +1,378 @@
+/* GRID - 28px Square Grid with 6 Columns */
+/* line 3, ../assets/sass/_grid.scss */
+#grid {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 28px;
+  right: 28px;
+  z-index: 10000;
+  pointer-events: none; }
+  @media (min-width: 728px) {
+    /* line 3, ../assets/sass/_grid.scss */
+    #grid {
+      max-width: 64.6rem; } }
+  @media (min-width: 1036px) {
+    /* line 3, ../assets/sass/_grid.scss */
+    #grid {
+      max-width: 98rem; } }
+
+/* line 21, ../assets/sass/_grid.scss */
+#grid.hide {
+  display: none; }
+
+/* line 24, ../assets/sass/_grid.scss */
+#grid:before,
+#grid:after {
+  content: "";
+  position: absolute;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-position: 0 .1rem, 0 .1rem, 100% 0;
+  border-right: .1rem solid transparent; }
+
+/* line 33, ../assets/sass/_grid.scss */
+#grid.full:after {
+  background-image: -webkit-linear-gradient(0deg, black 1.975%, transparent 1.975%), -webkit-linear-gradient(90deg, black 1.975%, transparent 1.975%), -webkit-linear-gradient(180deg, black 1.975%, transparent 1.975%);
+  background-size: 2.8rem 2.8rem;
+  background-repeat: repeat, repeat, repeat-y;
+  opacity: .04;
+  z-index: 1; }
+
+/* line 43, ../assets/sass/_grid.scss */
+#grid.columns:before {
+  background-image: -webkit-linear-gradient(0deg, #53ffff 0.5%, transparent 0.5%), -webkit-linear-gradient(0deg, #53ffff 0.5%, transparent 0.5%);
+  background-size: 16.8rem 100%, 16.8rem 100%;
+  background-position: 0 0, 14.0rem 0;
+  opacity: .75;
+  border-right-color: #53FFFF;
+  z-index: 2; }
+
+/* line 6, ../assets/sass/main.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 10, ../assets/sass/main.scss */
+html {
+  font-size: 62.5%; }
+
+/* line 14, ../assets/sass/main.scss */
+.container {
+  position: relative;
+  outline: 1px solid red;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 28px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+  @media (min-width: 728px) {
+    /* line 14, ../assets/sass/main.scss */
+    .container {
+      max-width: 64.6rem; } }
+  @media (min-width: 1036px) {
+    /* line 14, ../assets/sass/main.scss */
+    .container {
+      max-width: 98rem; } }
+
+/* line 31, ../assets/sass/main.scss */
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: whitesmoke;
+  font-family: "Adelle", "adelle-sans", "Adelle Sans", Helvetica Neue, helvetica, arial, sans-serif;
+  -webkit-font-smoothing: antialiased; }
+
+/* line 43, ../assets/sass/main.scss */
+header {
+  height: 19.6rem; }
+  @media (min-width: 728px) {
+    /* line 43, ../assets/sass/main.scss */
+    header {
+      height: 30.8rem; } }
+
+/* line 50, ../assets/sass/main.scss */
+svg {
+  font-size: 1.25rem;
+  position: absolute;
+  top: 7.2rem;
+  width: 8em;
+  height: 8em;
+  left: 50%;
+  margin-left: -4em;
+  margin-top: -1.9em;
+  -webkit-filter: blur(40px);
+  -webkit-transform: scale(2.25);
+  -webkit-transition: all .25s ease-in-out;
+  fill: #f5f5f5; }
+  @media (min-width: 728px) {
+    /* line 50, ../assets/sass/main.scss */
+    svg {
+      top: 14.0rem; } }
+  /* line 68, ../assets/sass/main.scss */
+  .ready svg {
+    -webkit-filter: none;
+    -webkit-transform: scale(1) translateZ(1px);
+    fill: #333333; }
+
+/* line 75, ../assets/sass/main.scss */
+h1 {
+  display: none; }
+
+/* line 77, ../assets/sass/main.scss */
+h2 {
+  font-size: 2.8rem;
+  width: 100%;
+  height: 5em;
+  position: relative;
+  margin: 0 0 0 0;
+  text-align: center;
+  line-height: 1.5em;
+  padding: 0;
+  -webkit-transform: translateZ(1px); }
+  /* line 88, ../assets/sass/main.scss */
+  h2 span {
+    display: inline-block;
+    color: #f5f5f5;
+    color: #252525;
+    text-align: center;
+    font-weight: 200;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    padding: .25em .75em;
+    letter-spacing: .2rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.75);
+    border-left: none;
+    border-right: none; }
+    @media (min-width: 728px) {
+      /* line 88, ../assets/sass/main.scss */
+      h2 span {
+        width: 30.8rem; } }
+
+/* line 111, ../assets/sass/main.scss */
+section + section {
+  margin-top: 8.4rem; }
+
+/* line 115, ../assets/sass/main.scss */
+section:last-child {
+  padding-bottom: 30.8rem; }
+
+/* For Mobile */
+/* line 121, ../assets/sass/main.scss */
+a {
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  position: relative;
+  -webkit-transform: translateZ(1px); }
+  /* line 129, ../assets/sass/main.scss */
+  a:hover img {
+    -webkit-filter: none; }
+  /* line 130, ../assets/sass/main.scss */
+  a:hover strong {
+    opacity: .01;
+    -webkit-transform: scaleY(0) scaleX(0); }
+  /* line 131, ../assets/sass/main.scss */
+  a:hover:before {
+    border: 0.1rem solid rgba(0, 0, 0, 0.5); }
+  /* line 134, ../assets/sass/main.scss */
+  a:before {
+    content: "";
+    position: absolute;
+    left: -.7rem;
+    top: -.7rem;
+    bottom: -.7rem;
+    right: -.7rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.25);
+    border-radius: inherit;
+    z-index: 1; }
+  /* line 146, ../assets/sass/main.scss */
+  a strong {
+    display: none; }
+    @media (min-width: 728px) {
+      /* line 146, ../assets/sass/main.scss */
+      a strong {
+        display: block;
+        font-size: 1.4rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 30.8rem;
+        padding: 2em .25em;
+        min-height: 5em;
+        line-height: 1em;
+        margin: -2.5em 0 0 -15.4rem;
+        text-align: center;
+        background: #252525;
+        letter-spacing: .1rem;
+        color: #f5f5f5;
+        z-index: 1;
+        font-weight: 400;
+        text-transform: uppercase;
+        /*     border-radius: .2rem; */
+        opacity: .99;
+        -webkit-transition: all .25s ease;
+        z-index: 3;
+        -webkit-transform: scaleY(1) scaleX(1); } }
+    /* line 174, ../assets/sass/main.scss */
+    a strong:before {
+      content: "";
+      position: absolute;
+      left: -.35rem;
+      top: -.35rem;
+      bottom: -.35rem;
+      right: -.35rem;
+      border: .1rem solid #252525;
+      border-radius: inherit; }
+
+/* line 187, ../assets/sass/main.scss */
+a + a {
+  margin-top: 5.6rem; }
+
+/* line 189, ../assets/sass/main.scss */
+img {
+  content: "";
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 42.857142%;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  border-radius: inherit;
+  z-index: 2; }
+  @media (min-width: 728px) {
+    /* line 189, ../assets/sass/main.scss */
+    img {
+      -webkit-filter: grayscale(0.5) opacity(0.15);
+      -webkit-transition: all .25s ease; } }
+
+/* Groupon */
+/* line 211, ../assets/sass/main.scss */
+.groupon-1 img {
+  background-image: url(http://f.cl.ly/items/1332171L1S3A3i012R0r/Photoshop-2014-01-14-at-3.08.48-AM.png); }
+
+/* line 212, ../assets/sass/main.scss */
+.groupon-2 img {
+  background-image: url(http://f.cl.ly/items/3o0N460b402l353U2v2n/Photoshop-2014-01-14-at-3.13.18-AM.png); }
+
+/* line 213, ../assets/sass/main.scss */
+.groupon-3 img {
+  background-image: url(http://f.cl.ly/items/3p0A1o211P1n3R1Y373o/Photoshop-2014-01-14-at-3.21.34-AM.png); }
+
+/* line 214, ../assets/sass/main.scss */
+.groupon-4 img {
+  background-image: url(http://f.cl.ly/items/413c2t2g0O2A3N2Z3n1F/Photoshop-2014-01-14-at-3.30.35-AM.png); }
+
+/* line 215, ../assets/sass/main.scss */
+.groupon-5 img {
+  background-image: url(http://f.cl.ly/items/0W0J1x2z1e1c0A0j0p1z/Photoshop-2014-01-14-at-3.42.05-AM.png); }
+
+/* line 216, ../assets/sass/main.scss */
+.groupon-6 img {
+  background-image: url(http://f.cl.ly/items/3B2o3V2K1s1L3m0c0y09/Photoshop-2014-01-14-at-3.54.19-AM.png); }
+
+/* line 217, ../assets/sass/main.scss */
+.groupon-7 img {
+  background-image: url(http://f.cl.ly/items/0N1B1t2x3a2C1b1F1X2z/Image%202014-01-14%20at%203.55.36%20AM.png); }
+
+/* line 219, ../assets/sass/main.scss */
+.koemei img {
+  background-image: url(http://cl.ly/TMC2/Photoshop-2014-01-14-at-3.59.01-AM.png); }
+
+/* APPS */
+/* line 223, ../assets/sass/main.scss */
+.speedo img {
+  background-image: url(http://f.cl.ly/items/130D192o000y1T2q0t0F/Photoshop-2014-01-14-at-3.52.08-AM.png); }
+
+/* line 225, ../assets/sass/main.scss */
+.radius img {
+  background-image: url(http://cl.ly/TLpA/Photoshop-2014-01-14-at-4.10.25-AM.png); }
+
+/* line 226, ../assets/sass/main.scss */
+.bobsled img {
+  background-image: url(http://cl.ly/TMGx/Photoshop-2014-01-14-at-4.19.11-AM.png); }
+
+/* Design */
+/* line 230, ../assets/sass/main.scss */
+.zenprise img {
+  background-image: url(http://cl.ly/TMiA/Photoshop-2014-01-14-at-4.34.48-AM.png); }
+
+/* line 231, ../assets/sass/main.scss */
+.polycom img {
+  background-image: url(http://f.cl.ly/items/2A3J0t132l210q0e3v1y/Photoshop-2014-01-14-at-4.47.59-AM.png); }
+
+/* line 232, ../assets/sass/main.scss */
+.redhot img {
+  background-image: url(http://cl.ly/TMQ0/Photoshop-2014-01-14-at-4.54.31-AM.png); }
+
+/* Ideas & Wires */
+/* line 236, ../assets/sass/main.scss */
+.paperbutton-1 img {
+  background-image: url(http://f.cl.ly/items/0g2k2J1f0H3o103v0C3X/Photoshop-2014-01-14-at-3.06.07-AM.png); }
+
+/* line 239, ../assets/sass/main.scss */
+.paperbutton-2 img {
+  background-image: url(http://cl.ly/TMUo/Photoshop-2014-01-14-at-5.06.59-AM.png); }
+
+/* line 242, ../assets/sass/main.scss */
+.paperbutton-3 img {
+  background-image: url(http://cl.ly/TMNY/Photoshop-2014-01-14-at-5.12.27-AM.png); }
+
+/* line 246, ../assets/sass/main.scss */
+.plix img {
+  background-image: url(http://cl.ly/TMBa/Photoshop-2014-01-14-at-5.16.39-AM.png); }
+
+/* Expirements & Code */
+/* line 250, ../assets/sass/main.scss */
+.invite img {
+  background-image: url(http://cl.ly/TMDe/Photoshop-2014-01-14-at-5.22.46-AM.png); }
+
+/* line 254, ../assets/sass/main.scss */
+.status img {
+  background-image: url(http://cl.ly/TMV7/Photoshop-2014-01-14-at-5.34.30-AM.png); }
+
+/* line 257, ../assets/sass/main.scss */
+.underoath img {
+  background-image: url(http://cl.ly/TMmM/Photoshop-2014-01-14-at-5.39.16-AM.png); }
+
+/* line 260, ../assets/sass/main.scss */
+.inset img {
+  background-image: url(http://cl.ly/TLmi/Photoshop-2014-01-14-at-5.43.19-AM.png); }
+
+/* line 263, ../assets/sass/main.scss */
+.progress img {
+  background-image: url(http://cl.ly/TLn5/Photoshop-2014-01-14-at-5.55.03-AM.png); }
+
+/* line 266, ../assets/sass/main.scss */
+.dashed img {
+  background-image: url(http://cl.ly/TMAf/Photoshop-2014-01-14-at-5.53.29-AM.png); }
+
+/* line 269, ../assets/sass/main.scss */
+.fullwidth img {
+  background-image: url(http://cl.ly/TLfN/Photoshop-2014-01-14-at-6.01.02-AM.png); }
+
+/* line 273, ../assets/sass/main.scss */
+.montage img {
+  background-image: url(http://cl.ly/TMbr/Photoshop-2014-01-14-at-6.08.26-AM.png); }
+
+/* line 276, ../assets/sass/main.scss */
+.hylyt img {
+  background-image: url(http://cl.ly/TLgm/Photoshop-2014-01-14-at-6.10.17-AM.png); }
+
+/* line 279, ../assets/sass/main.scss */
+.watashiwa img {
+  background-image: url(http://cl.ly/TMdK/Photoshop-2014-01-14-at-6.14.47-AM.png); }
+
+/* line 283, ../assets/sass/main.scss */
+.anberlin img {
+  background-image: url(http://cl.ly/TMaj/Photoshop-2014-01-14-at-6.16.58-AM.png); }
