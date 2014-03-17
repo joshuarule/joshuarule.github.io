@@ -1,14 +1,21 @@
 /* GRID - 28px Square Grid with 6 Columns */
 
 #grid{
-  width: 98.0rem;
-
-  min-height: 100%;
   position: absolute;
-  top: 0; left: 50%; margin-left: -49.0rem;
+  top:    0;
   bottom: 0;
+  left:   28px;
+  right:  28px;
   z-index: 10000;
   pointer-events: none;
+  
+  @include breakpoint($break) {
+    max-width: 64.6rem;
+  }
+
+  @include breakpoint($break1) {
+    max-width: 98rem;
+  }
 }
 
 #grid.hide{ display: none; }
@@ -17,6 +24,7 @@
 #grid:after{
   content: "";
   position: absolute;
+  z-index: 1000;
   left: 0; right: 0; top: 0; bottom: 0;
   background-position: 0 .1rem, 0 .1rem, 100% 0;
   border-right: .1rem solid transparent;
