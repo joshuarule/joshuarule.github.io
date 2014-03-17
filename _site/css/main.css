@@ -153,39 +153,40 @@ h2 {
     border: 0.1rem solid rgba(0, 0, 0, 0.75);
     border-left: none;
     border-right: none;
-    width: 100%; }
+    width: 100%;
+    max-width: 30.8rem; }
     @media (min-width: 728px) {
       /* line 88, ../assets/sass/main.scss */
       h2 span {
         width: 30.8rem; } }
 
-/* line 112, ../assets/sass/main.scss */
+/* line 113, ../assets/sass/main.scss */
 section + section {
   margin-top: 8.4rem; }
 
-/* line 116, ../assets/sass/main.scss */
+/* line 117, ../assets/sass/main.scss */
 section:last-child {
   padding-bottom: 30.8rem; }
 
 /* For Mobile */
-/* line 122, ../assets/sass/main.scss */
+/* line 123, ../assets/sass/main.scss */
 a {
   display: block;
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
   position: relative;
   -webkit-transform: translateZ(1px); }
-  /* line 130, ../assets/sass/main.scss */
+  /* line 131, ../assets/sass/main.scss */
   a:hover img {
     -webkit-filter: none; }
-  /* line 131, ../assets/sass/main.scss */
+  /* line 132, ../assets/sass/main.scss */
   a:hover strong {
     opacity: .01;
     -webkit-transform: scaleY(0) scaleX(0); }
-  /* line 132, ../assets/sass/main.scss */
+  /* line 133, ../assets/sass/main.scss */
   a:hover:before {
     border: 0.1rem solid rgba(0, 0, 0, 0.5); }
-  /* line 135, ../assets/sass/main.scss */
+  /* line 136, ../assets/sass/main.scss */
   a:before {
     content: "";
     position: absolute;
@@ -196,11 +197,11 @@ a {
     border: 0.1rem solid rgba(0, 0, 0, 0.25);
     border-radius: inherit;
     z-index: 1; }
-  /* line 147, ../assets/sass/main.scss */
+  /* line 148, ../assets/sass/main.scss */
   a strong {
     display: none; }
     @media (min-width: 728px) {
-      /* line 147, ../assets/sass/main.scss */
+      /* line 148, ../assets/sass/main.scss */
       a strong {
         display: block;
         font-size: 1.4rem;
@@ -224,7 +225,7 @@ a {
         -webkit-transition: all .25s ease;
         z-index: 3;
         -webkit-transform: scaleY(1) scaleX(1); } }
-    /* line 175, ../assets/sass/main.scss */
+    /* line 176, ../assets/sass/main.scss */
     a strong:before {
       content: "";
       position: absolute;
@@ -235,11 +236,11 @@ a {
       border: .1rem solid #252525;
       border-radius: inherit; }
 
-/* line 188, ../assets/sass/main.scss */
+/* line 189, ../assets/sass/main.scss */
 a + a {
   margin-top: 5.6rem; }
 
-/* line 190, ../assets/sass/main.scss */
+/* line 191, ../assets/sass/main.scss */
 img {
   content: "";
   display: block;
@@ -252,128 +253,128 @@ img {
   border-radius: inherit;
   z-index: 2; }
   @media (min-width: 728px) {
-    /* line 190, ../assets/sass/main.scss */
+    /* line 191, ../assets/sass/main.scss */
     img {
       -webkit-filter: grayscale(0.5) opacity(0.15);
       -webkit-transition: all .25s ease; } }
 
 /* Groupon */
-/* line 212, ../assets/sass/main.scss */
+/* line 213, ../assets/sass/main.scss */
 .groupon-1 img {
   background-image: url(http://f.cl.ly/items/1332171L1S3A3i012R0r/Photoshop-2014-01-14-at-3.08.48-AM.png); }
 
-/* line 213, ../assets/sass/main.scss */
+/* line 214, ../assets/sass/main.scss */
 .groupon-2 img {
   background-image: url(http://f.cl.ly/items/3o0N460b402l353U2v2n/Photoshop-2014-01-14-at-3.13.18-AM.png); }
 
-/* line 214, ../assets/sass/main.scss */
+/* line 215, ../assets/sass/main.scss */
 .groupon-3 img {
   background-image: url(http://f.cl.ly/items/3p0A1o211P1n3R1Y373o/Photoshop-2014-01-14-at-3.21.34-AM.png); }
 
-/* line 215, ../assets/sass/main.scss */
+/* line 216, ../assets/sass/main.scss */
 .groupon-4 img {
   background-image: url(http://f.cl.ly/items/413c2t2g0O2A3N2Z3n1F/Photoshop-2014-01-14-at-3.30.35-AM.png); }
 
-/* line 216, ../assets/sass/main.scss */
+/* line 217, ../assets/sass/main.scss */
 .groupon-5 img {
   background-image: url(http://f.cl.ly/items/0W0J1x2z1e1c0A0j0p1z/Photoshop-2014-01-14-at-3.42.05-AM.png); }
 
-/* line 217, ../assets/sass/main.scss */
+/* line 218, ../assets/sass/main.scss */
 .groupon-6 img {
   background-image: url(http://f.cl.ly/items/3B2o3V2K1s1L3m0c0y09/Photoshop-2014-01-14-at-3.54.19-AM.png); }
 
-/* line 218, ../assets/sass/main.scss */
+/* line 219, ../assets/sass/main.scss */
 .groupon-7 img {
   background-image: url(http://f.cl.ly/items/0N1B1t2x3a2C1b1F1X2z/Image%202014-01-14%20at%203.55.36%20AM.png); }
 
-/* line 220, ../assets/sass/main.scss */
+/* line 221, ../assets/sass/main.scss */
 .koemei img {
   background-image: url(http://cl.ly/TMC2/Photoshop-2014-01-14-at-3.59.01-AM.png); }
 
 /* APPS */
-/* line 224, ../assets/sass/main.scss */
+/* line 225, ../assets/sass/main.scss */
 .speedo img {
   background-image: url(http://f.cl.ly/items/130D192o000y1T2q0t0F/Photoshop-2014-01-14-at-3.52.08-AM.png); }
 
-/* line 226, ../assets/sass/main.scss */
+/* line 227, ../assets/sass/main.scss */
 .radius img {
   background-image: url(http://cl.ly/TLpA/Photoshop-2014-01-14-at-4.10.25-AM.png); }
 
-/* line 227, ../assets/sass/main.scss */
+/* line 228, ../assets/sass/main.scss */
 .bobsled img {
   background-image: url(http://cl.ly/TMGx/Photoshop-2014-01-14-at-4.19.11-AM.png); }
 
 /* Design */
-/* line 231, ../assets/sass/main.scss */
+/* line 232, ../assets/sass/main.scss */
 .zenprise img {
   background-image: url(http://cl.ly/TMiA/Photoshop-2014-01-14-at-4.34.48-AM.png); }
 
-/* line 232, ../assets/sass/main.scss */
+/* line 233, ../assets/sass/main.scss */
 .polycom img {
   background-image: url(http://f.cl.ly/items/2A3J0t132l210q0e3v1y/Photoshop-2014-01-14-at-4.47.59-AM.png); }
 
-/* line 233, ../assets/sass/main.scss */
+/* line 234, ../assets/sass/main.scss */
 .redhot img {
   background-image: url(http://cl.ly/TMQ0/Photoshop-2014-01-14-at-4.54.31-AM.png); }
 
 /* Ideas & Wires */
-/* line 237, ../assets/sass/main.scss */
+/* line 238, ../assets/sass/main.scss */
 .paperbutton-1 img {
   background-image: url(http://f.cl.ly/items/0g2k2J1f0H3o103v0C3X/Photoshop-2014-01-14-at-3.06.07-AM.png); }
 
-/* line 240, ../assets/sass/main.scss */
+/* line 241, ../assets/sass/main.scss */
 .paperbutton-2 img {
   background-image: url(http://cl.ly/TMUo/Photoshop-2014-01-14-at-5.06.59-AM.png); }
 
-/* line 243, ../assets/sass/main.scss */
+/* line 244, ../assets/sass/main.scss */
 .paperbutton-3 img {
   background-image: url(http://cl.ly/TMNY/Photoshop-2014-01-14-at-5.12.27-AM.png); }
 
-/* line 247, ../assets/sass/main.scss */
+/* line 248, ../assets/sass/main.scss */
 .plix img {
   background-image: url(http://cl.ly/TMBa/Photoshop-2014-01-14-at-5.16.39-AM.png); }
 
 /* Expirements & Code */
-/* line 251, ../assets/sass/main.scss */
+/* line 252, ../assets/sass/main.scss */
 .invite img {
   background-image: url(http://cl.ly/TMDe/Photoshop-2014-01-14-at-5.22.46-AM.png); }
 
-/* line 255, ../assets/sass/main.scss */
+/* line 256, ../assets/sass/main.scss */
 .status img {
   background-image: url(http://cl.ly/TMV7/Photoshop-2014-01-14-at-5.34.30-AM.png); }
 
-/* line 258, ../assets/sass/main.scss */
+/* line 259, ../assets/sass/main.scss */
 .underoath img {
   background-image: url(http://cl.ly/TMmM/Photoshop-2014-01-14-at-5.39.16-AM.png); }
 
-/* line 261, ../assets/sass/main.scss */
+/* line 262, ../assets/sass/main.scss */
 .inset img {
   background-image: url(http://cl.ly/TLmi/Photoshop-2014-01-14-at-5.43.19-AM.png); }
 
-/* line 264, ../assets/sass/main.scss */
+/* line 265, ../assets/sass/main.scss */
 .progress img {
   background-image: url(http://cl.ly/TLn5/Photoshop-2014-01-14-at-5.55.03-AM.png); }
 
-/* line 267, ../assets/sass/main.scss */
+/* line 268, ../assets/sass/main.scss */
 .dashed img {
   background-image: url(http://cl.ly/TMAf/Photoshop-2014-01-14-at-5.53.29-AM.png); }
 
-/* line 270, ../assets/sass/main.scss */
+/* line 271, ../assets/sass/main.scss */
 .fullwidth img {
   background-image: url(http://cl.ly/TLfN/Photoshop-2014-01-14-at-6.01.02-AM.png); }
 
-/* line 274, ../assets/sass/main.scss */
+/* line 275, ../assets/sass/main.scss */
 .montage img {
   background-image: url(http://cl.ly/TMbr/Photoshop-2014-01-14-at-6.08.26-AM.png); }
 
-/* line 277, ../assets/sass/main.scss */
+/* line 278, ../assets/sass/main.scss */
 .hylyt img {
   background-image: url(http://cl.ly/TLgm/Photoshop-2014-01-14-at-6.10.17-AM.png); }
 
-/* line 280, ../assets/sass/main.scss */
+/* line 281, ../assets/sass/main.scss */
 .watashiwa img {
   background-image: url(http://cl.ly/TMdK/Photoshop-2014-01-14-at-6.14.47-AM.png); }
 
-/* line 284, ../assets/sass/main.scss */
+/* line 285, ../assets/sass/main.scss */
 .anberlin img {
   background-image: url(http://cl.ly/TMaj/Photoshop-2014-01-14-at-6.16.58-AM.png); }

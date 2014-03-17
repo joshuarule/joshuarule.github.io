@@ -99,6 +99,7 @@ h2{
     border-left:  none;
     border-right: none;
     width: 100%;
+    max-width: 30.8rem;
 
     @include breakpoint($break) {
       width: 30.8rem;
