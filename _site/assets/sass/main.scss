@@ -16,7 +16,7 @@ html{
   outline: 1px solid red;
   margin: 0 auto;
   overflow: hidden; 
-  padding: 0 28px;
+  padding: 0 35px;
   @include box-sizing(content-box);
   
   @include breakpoint($break) {
@@ -98,6 +98,7 @@ h2{
     border: .1rem solid rgba(0,0,0,.75);
     border-left:  none;
     border-right: none;
+    width: 100%;
 
     @include breakpoint($break) {
       width: 30.8rem;
