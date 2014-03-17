@@ -64,7 +64,6 @@ html {
 /* line 14, ../assets/sass/main.scss */
 .container {
   position: relative;
-  outline: 1px solid red;
   margin: 0 auto;
   overflow: hidden;
   padding: 0 35px;
