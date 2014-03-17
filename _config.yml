@@ -1,0 +1,6 @@
+name: JoshuaRule Portfolio
+markdown: redcarpet
+pygments: true
+url: "http://joshuarule.github.io/portfolio/"
+baseurl: "/portfolio"
+permalink: none
